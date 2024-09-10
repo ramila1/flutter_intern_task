@@ -15,9 +15,13 @@ List<CategoryModel> getCategories(){
   categoryModel = new CategoryModel();
 
   categoryModel.categoryName = "Sports";
-  categoryModel.image = "images/sport.jpg";
+  categoryModel.image = "images/sports.jpg";
   category.add(categoryModel);
   categoryModel = new CategoryModel();
 
+  categoryModel.categoryName = "Entertainment";
+  categoryModel.image = "images/entertainment.png";
+  category.add(categoryModel);
+  categoryModel = new CategoryModel();
   return category;
 }

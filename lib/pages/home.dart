@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_intern_task/models/category_model.dart';
 import 'package:flutter_intern_task/services/data.dart';
@@ -30,10 +31,15 @@ class _HomeState extends State<Home> {
         elevation: 0.0,
       ),
       body: Container(
+
         child: Column(
           children: [
-            Container(child: ListView.builder(
+            Container(
+              margin: EdgeInsets.only(left: 10.0),
+              height: 70,
+              child: ListView.builder(
               shrinkWrap: true,
+                scrollDirection: Axis.horizontal,
                 itemCount: categories.length,
                 itemBuilder: (context,index){
               return Categories(
@@ -41,7 +47,8 @@ class _HomeState extends State<Home> {
                 categoryName: categories[index].categoryName,
               );
             }),
-            )
+            ),
+            CarouselSlider.builder(itemCount: ,itemBuilder: , options: ,,)
 
           ],
         ),
@@ -57,12 +64,30 @@ class Categories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.only(right: 16),
       child: Stack(
         children: [
-          Image.asset(
-            image,
+          ClipRRect(
+            borderRadius: BorderRadius.circular(6),
+            child: Image.asset(
+              image,
+              width:120,
+              height: 70,
+              fit: BoxFit.cover,
+            ),
+          ),
+          Container(
             width:120,
-            height: 60,
+            height: 70,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(6),
+              color: Colors.black38,),
+
+            child: Center(
+                child: Text(categoryName,
+                  style: TextStyle(
+                      color: Colors.white,
+                  fontSize: 15, fontWeight: FontWeight.bold),)),
           )
         ],
       ),
