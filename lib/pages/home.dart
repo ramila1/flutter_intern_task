@@ -91,8 +91,7 @@ class _HomeState extends State<Home> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text("News"),
-            Text(
-              "24x7",
+            Text("24x7",
               style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
             ),
           ],
@@ -194,7 +193,7 @@ class _HomeState extends State<Home> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Breaking News!!",
+                          "Breaking News",
                           style: TextStyle(
                             color: Colors.red,
                             fontWeight: FontWeight.bold,
@@ -259,7 +258,7 @@ class _HomeState extends State<Home> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Trending News!!",
+                          "Trending News",
                           style: TextStyle(
                             color: Colors.red,
                             fontWeight: FontWeight.bold,
