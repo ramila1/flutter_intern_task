@@ -37,7 +37,7 @@ class _LandingPageState extends State<LandingPage> {
                 ),
                 const SizedBox(height: 20.0), // Spacer between image and text
                 Text(
-                  "News from around the\n   world for you",
+                  "Your Daily News, Delivered",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.black, // Text color
@@ -47,7 +47,7 @@ class _LandingPageState extends State<LandingPage> {
                 ),
                 const SizedBox(height: 20.0), // Spacer between texts
                 Text(
-                  "Best time to read, take your time to read\n   a little more of this world.",
+                  "Your personalized news hub for the latest headlines, curated just for you!",
                   textAlign: TextAlign.center, // Center-align the text
                   style: TextStyle(
                     color: Colors.black45, // Text color
